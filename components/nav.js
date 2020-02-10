@@ -2,8 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 
 const links = [
-  { href: 'https://zeit.co/now', label: 'ZEIT' },
-  { href: 'https://github.com/zeit/next.js', label: 'GitHub' },
+  { href: 'https://www.urbanobaz.com', label: 'Personal Site' },
+  { href: 'https://github.com/urbanobaz', label: 'GitHub' },
+  { href: 'https://twitter.com/ubaz_3', label: 'Twitter' }
 ].map(link => ({
   ...link,
   key: `nav-link-${link.href}-${link.label}`,
@@ -14,7 +15,7 @@ const Nav = () => (
     <ul>
       <li>
         <Link href="/">
-          <a>Home</a>
+          <a><b>Books&More</b></a>
         </Link>
       </li>
       {links.map(({ key, href, label }) => (
@@ -45,7 +46,7 @@ const Nav = () => (
         padding: 6px 8px;
       }
       a {
-        color: #067df7;
+        color: black;
         text-decoration: none;
         font-size: 13px;
       }
